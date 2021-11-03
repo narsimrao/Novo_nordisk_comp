@@ -1,0 +1,1 @@
+# Novo_nordisk_comp
