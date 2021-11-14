@@ -2,3 +2,31 @@
     width : 70%;
     margin-left : 0px;
 }
+.q1Header{
+    text-align : center;
+    font-family : 'sans-serif';
+    font-size : 24px;
+}
+table{
+    width: 50%;
+}
+.From,.To{
+    text-align: center;
+    font-size: large;
+}
+.from_year_dropdown{
+    width : 100%;
+}
+
+.to_year_dropdown{
+    width : 100%;
+}
+
+.q1_bar_chart{
+    display: inline-block;
+    width : 70%
+}
+.q1_pie_chart{
+    display: inline-block;
+    width : 30%
+}
