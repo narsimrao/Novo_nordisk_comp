@@ -2,7 +2,7 @@
     width : 70%;
     margin-left : 0px;
 }
-.q1Header{
+.q1Header, .q2Header{
     text-align : center;
     font-family : 'sans-serif';
     font-size : 24px;
@@ -29,4 +29,29 @@ table{
 .q1_pie_chart{
     display: inline-block;
     width : 30%
+}
+
+.q2_graph{
+	display: inline-block;
+	width : 70%;
+}
+
+.q2_graph_filters{
+	display: inline-block;
+	width : 30%;
+	vertical-align : top;
+}
+
+.start{
+	display : inline-block;
+    margin : 15px;
+}
+
+.end{
+	display : inline-block;
+    margin : 15px;
+}
+
+.filter{
+    font-size: 35px;
 }
