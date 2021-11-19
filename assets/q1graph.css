@@ -38,7 +38,12 @@ table{
 .q2_graph{
 	display: inline-block;
 	width : 80%;
+    overflow:auto;
 }
+
+/* #q2_bar_chart{
+    overflow-y : 'scroll';
+} */
 
 .q2_graph_filters{
 	display: inline-block;
