@@ -6,7 +6,7 @@ html{
     width : 70%;
     margin-left : 0px;
 }
-.q1Header, .q2Header{
+.q1Header, .q2Header, .q3Header{
     text-align : center;
     font-size : 30px;
     margin-bottom: 25px;
@@ -78,3 +78,20 @@ table{
     margin : 5px;
 }
 
+.industries_drop_text{
+    display: inline-block;
+    width: 10%;
+    margin: 5px;
+}
+
+.industries_drop_down{
+    display: inline-block;
+    width: 30%;
+    border: 20px;
+    color: None;
+}
+
+.q3_first_div{
+    margin-left: 2%;
+    width: 100%;
+}
