@@ -87,11 +87,13 @@ table{
 .industries_drop_down{
     display: inline-block;
     width: 30%;
-    border: 20px;
-    color: None;
 }
 
-.q3_first_div{
+.events_div{
+    display: inline-block;
+}
+
+.q3_subplot_main_div{
     margin-left: 2%;
     width: 100%;
 }
