@@ -32,7 +32,8 @@ table{
 }
 .q1_pie_chart{
     display: inline-block;
-    width : 30%
+    width : 30%;
+    word-wrap: break-word;
 }
 
 .q2_graph{
@@ -51,7 +52,7 @@ table{
 	vertical-align : top;
 }
 
-.start{
+.range{
 	display : inline-block;
     margin : 0px 15px 15px 15px;
 }
@@ -61,7 +62,7 @@ table{
     margin : 0px 15px 15px 15px;
 }
 
-#start, #end{
+#range, #end{
     width : 40%;
 }
 
@@ -76,6 +77,10 @@ table{
 
 #q2_radio label{
     margin : 5px;
+}
+
+.q2_graph_text{
+    font-size: 14px;
 }
 
 .industries_drop_text{
