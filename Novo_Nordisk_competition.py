@@ -729,7 +729,7 @@ if __name__ == '__main__':
     def open_browser():
         webbrowser.open_new('http://127.0.0.1:8080/')
     open_browser()
-    app.run_server(debug=False, use_reloader=False, port='8080')
+    app.run_server(debug=False, use_reloader=False,port=os.environ.get('PORT', '8080'))
 
 
 # In[ ]:
