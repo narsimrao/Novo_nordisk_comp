@@ -1,1 +1,1 @@
-web: gunicorn --bind 0.0.0.0:$PORT app:Novo_Nordisk_competition
+web: gunicorn --bind 0.0.0.0:$PORT app:app
