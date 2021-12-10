@@ -9,6 +9,7 @@ import numpy as np
 from collections import Counter
 import math
 import webbrowser
+import os
 
 
 # In[2]:
@@ -726,9 +727,9 @@ def update_compare_charts(indus_drop,events_drop):
 
     
 if __name__ == '__main__':
-    def open_browser():
-        webbrowser.open_new('http://127.0.0.1:8080/')
-    open_browser()
+    # def open_browser():
+    #     webbrowser.open_new('http://127.0.0.1:8080/')
+    # open_browser()
     app.run_server(debug=False, use_reloader=False,port=os.environ.get('PORT', '8080'))
 
 
