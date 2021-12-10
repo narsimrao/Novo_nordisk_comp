@@ -639,7 +639,7 @@ def Update_q2_bar_chart(range):
     if start > end:
         raise PreventUpdate
     
-    slice_df = q2_final_df[start-1:end + 1]
+    slice_df = q2_final_df[start-1:end]
     slice_df.sort_values('values', ascending=True, inplace=True)
 
 
