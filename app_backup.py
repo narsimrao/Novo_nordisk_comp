@@ -1,18 +1,18 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # In[56]:
+# In[1]:
 
 
 import pandas as pd
 import numpy as np
 from collections import Counter
 import math
-# import webbrowser
+import webbrowser
 import os
 
 
-# # In[57]:
+# In[2]:
 
 
 import dash
@@ -24,58 +24,36 @@ import plotly.graph_objects as go
 import dash_bootstrap_components as dbc
 from plotly.subplots import make_subplots
 
+print('Execution Started.....')
 
-# # In[58]:
+# In[3]:
 
 
 df = pd.read_csv('CAERS_ASCII_2004_2017Q2.csv')
 df.head()
 
 
-# # In[59]:
+# In[4]:
 
 
 temp_df = df.copy()
 
 
-# # In[60]:
-
-
-q1 = False
-q2 = False
-q3 = False
-
-if os.path.exists('q1.csv'):
-    q1 = True
-if os.path.exists('q2.csv'):
-    q2 = True
-if os.path.exists('q3.csv'):
-    q3 = True
-
-
-# # In[61]:
-
-
-print('q1 : ',q1)
-print('q2 : ',q2)
-print('q3 : ',q3)
-
-
 # # Q1
 
-# # In[62]:
+# In[5]:
 
 
 temp_df['AEC_Event Start Date'] = pd.to_datetime(temp_df['AEC_Event Start Date'])
 
 
-# # In[63]:
+# In[6]:
 
 
 temp_df['CI_Gender'].unique()
 
 
-# # In[64]:
+# In[7]:
 
 
 for name in temp_df['CI_Gender'].unique():
@@ -88,20 +66,20 @@ for name in temp_df['CI_Gender'].unique():
 temp_df = temp_df.replace(' ',np.nan)
 
 
-# # In[65]:
+# In[8]:
 
 
 temp_df['CI_Gender'].unique()
 
 
-# # In[66]:
+# In[9]:
 
 
 # df['CI_Gender'] = df['CI_Gender'].replace('Female',0)
 # df['CI_Gender'] = df['CI_Gender'].replace('Male',1)
 
 
-# # In[67]:
+# In[10]:
 
 
 temp_df['AEC_Event Start Date'].replace('', np.nan, inplace=True)
@@ -109,341 +87,323 @@ temp_df.dropna(subset=['AEC_Event Start Date'], inplace=True)
 temp_df.shape
 
 
-# # In[68]:
+# In[11]:
 
 
 data = temp_df[['AEC_Event Start Date','CI_Gender']]
 
 
-# # In[69]:
+# In[12]:
 
 
-data.to_csv('q1_raw_df.csv',index=False)
+data.to_csv('q1.csv',index=False)
 
 
-# # In[70]:
+# In[13]:
 
 
-dt = pd.read_csv('q1_raw_df.csv')
+dt = pd.read_csv('q1.csv')
 
 
-# # In[ ]:
+# In[ ]:
 
 
 
 
 
-# # In[71]:
-if q1 == False:
+# In[14]:
 
-    years = []
-    for i in range(0,dt['AEC_Event Start Date'].shape[0]):
-        date = pd.to_datetime(dt['AEC_Event Start Date'][i])
-        date = str(date).split()[0]
-        year = pd.to_numeric(date.split('-')[0])
-        years.append(year)
-    
-    
-    # # In[72]:
-    
-    
-    dt['years'] = years
-    
-    
-    # # In[73]:
-    
-    
-    dt.head(2)
-    
-    
-    # # In[74]:
-    
-    
-    data_count_by_year = dt.groupby('years')['CI_Gender'].count()
-    
-    
-    # # In[75]:
-    
-    
-    data_count_by_year = data_count_by_year.to_dict()
-    
-    
-    # # In[76]:
-    
-    
-    # dt = dt[(dt['CI_Gender'].str.contains('0', na=False)) | (dt['CI_Gender'].str.contains('1', na=False))]
-    # dt.info()
-    
-    
-    # # In[77]:
-    
-    
-    dt['CI_Gender'] = pd.to_numeric(dt['CI_Gender'])
-    # dt.info()
-    
-    
-    # # In[78]:
-    
-    
-    dt.index = dt['years']
-    
-    
-    # # In[79]:
-    
-    
-    dt_zeros = dt.where(dt['CI_Gender'] == 0)
-    dt_ones = dt.where(dt['CI_Gender'] == 1)
-    dt_unknown = dt.where(dt['CI_Gender'] == 2)
-    
-    
-    # # In[80]:
-    
-    
-    dt_zeros = dt_zeros.dropna()
-    dt_ones = dt_ones.dropna()
-    dt_unknown = dt_unknown.dropna()
-    
-    
-    # # In[81]:
-    
-    
-    dt_zeros = dt_zeros.groupby(dt_zeros.index)['CI_Gender'].count()
-    dt_ones = dt_ones.groupby(dt_ones.index)['CI_Gender'].count()
-    dt_unknown = dt_unknown.groupby(dt_unknown.index)['CI_Gender'].count()
-    
-    
-    # # In[82]:
-    
-    
-    dt_zeros_female = dt_zeros.to_dict()
-    dt_ones_male = dt_ones.to_dict()
-    dt_twos_unknown = dt_unknown.to_dict()
-    
-    
-    # # In[83]:
-    
-    
-    years = []
-    total_entries = []
-    male = []
-    female = []
-    unknown = []
-    
-    for key,value in data_count_by_year.items():
-        #Female
-        if key in dt_zeros_female:
-            female.append(dt_zeros_female[key])
-        else:
-            female.append(0)
-    
-        #Male
-        if key in dt_ones_male:
-            male.append(dt_ones_male[key])
-        else:
-            male.append(0)
-    
-        #Unknown
-        if key in dt_twos_unknown:
-            unknown.append(dt_twos_unknown[key])
-        else:
-            unknown.append(0)
-        years.append(key)
-        total_entries.append(value)
-    
-    
-    # # In[84]:
-    
-    
-    d = {'Years' : years,
-        'Male' : male,
-        'Female' : female,
-        'Unknown' : unknown,
-        'Total_entries' : total_entries}
-    q1_final_df = pd.DataFrame(d)
-    
-    
-    # # In[85]:
-    
-    
-    def percentage(part, whole):
-        percentage = 100 * float(part)/float(whole)
-        return round(percentage,2)
-    
-    # print(percentage(3, 5))
-    
-    
-    # # In[86]:
-    
-    
-    male_percent_list = []
-    female_percent_list = []
-    unknown_percent_list = []
-    for index, row in q1_final_df.iterrows():
-        male_percent = percentage(row['Male'], row['Total_entries'])
-        female_percent = percentage(row['Female'], row['Total_entries'])
-        unknown_percent = percentage(row['Unknown'], row['Total_entries'])
-        
-        male_percent_list.append(male_percent)
-        female_percent_list.append(female_percent)
-        unknown_percent_list.append(unknown_percent)
-    
-    
-    # # In[87]:
-    
-    
-    q1_final_df['Male_percentage'] = male_percent_list
-    q1_final_df['Female_percentage'] = female_percent_list
-    q1_final_df['Unknown_percentage'] = unknown_percent_list
-    
-    
-    # # In[88]:
-    
-    
-    q1_final_df.to_csv('q1.csv',index=False)
-else:
-    q1_final_df = pd.read_csv('q1.csv')
+
+years = []
+for i in range(0,dt['AEC_Event Start Date'].shape[0]):
+    date = pd.to_datetime(dt['AEC_Event Start Date'][i])
+    date = str(date).split()[0]
+    year = pd.to_numeric(date.split('-')[0])
+    years.append(year)
+
+
+# In[15]:
+
+
+dt['years'] = years
+
+
+# In[16]:
+
+
+dt.head(2)
+
+
+# In[17]:
+
+
+data_count_by_year = dt.groupby('years')['CI_Gender'].count()
+
+
+# In[18]:
+
+
+data_count_by_year = data_count_by_year.to_dict()
+
+
+# In[19]:
+
+
+# dt = dt[(dt['CI_Gender'].str.contains('0', na=False)) | (dt['CI_Gender'].str.contains('1', na=False))]
+# dt.info()
+
+
+# In[20]:
+
+
+dt['CI_Gender'] = pd.to_numeric(dt['CI_Gender'])
+# dt.info()
+
+
+# In[21]:
+
+
+dt.index = dt['years']
+
+
+# In[22]:
+
+
+dt_zeros = dt.where(dt['CI_Gender'] == 0)
+dt_ones = dt.where(dt['CI_Gender'] == 1)
+dt_unknown = dt.where(dt['CI_Gender'] == 2)
+
+
+# In[23]:
+
+
+dt_zeros = dt_zeros.dropna()
+dt_ones = dt_ones.dropna()
+dt_unknown = dt_unknown.dropna()
+
+
+# In[24]:
+
+
+dt_zeros = dt_zeros.groupby(dt_zeros.index)['CI_Gender'].count()
+dt_ones = dt_ones.groupby(dt_ones.index)['CI_Gender'].count()
+dt_unknown = dt_unknown.groupby(dt_unknown.index)['CI_Gender'].count()
+
+
+# In[25]:
+
+
+dt_zeros_female = dt_zeros.to_dict()
+dt_ones_male = dt_ones.to_dict()
+dt_twos_unknown = dt_unknown.to_dict()
+
+
+# In[26]:
+
+
+years = []
+total_entries = []
+male = []
+female = []
+unknown = []
+
+for key,value in data_count_by_year.items():
+    #Female
+    if key in dt_zeros_female:
+        female.append(dt_zeros_female[key])
+    else:
+        female.append(0)
+
+    #Male
+    if key in dt_ones_male:
+        male.append(dt_ones_male[key])
+    else:
+        male.append(0)
+
+    #Unknown
+    if key in dt_twos_unknown:
+        unknown.append(dt_twos_unknown[key])
+    else:
+        unknown.append(0)
+    years.append(key)
+    total_entries.append(value)
+
+
+# In[27]:
+
+
+d = {'Years' : years,
+    'Male' : male,
+    'Female' : female,
+    'Unknown' : unknown,
+    'Total_entries' : total_entries}
+q1_final_df = pd.DataFrame(d)
+
+
+# In[28]:
+
+
+def percentage(part, whole):
+    percentage = 100 * float(part)/float(whole)
+    return round(percentage,2)
+
+# print(percentage(3, 5))
+
+
+# In[29]:
+
+
+male_percent_list = []
+female_percent_list = []
+unknown_percent_list = []
+for index, row in q1_final_df.iterrows():
+    male_percent = percentage(row['Male'], row['Total_entries'])
+    female_percent = percentage(row['Female'], row['Total_entries'])
+    unknown_percent = percentage(row['Unknown'], row['Total_entries'])
+    
+    male_percent_list.append(male_percent)
+    female_percent_list.append(female_percent)
+    unknown_percent_list.append(unknown_percent)
+
+
+# In[30]:
+
+
+q1_final_df['Male_percentage'] = male_percent_list
+q1_final_df['Female_percentage'] = female_percent_list
+q1_final_df['Unknown_percentage'] = unknown_percent_list
 
 
 # # Q2
 
-# # In[89]:
+# In[31]:
 
-if q2 == False:
-    dt_symptoms = df['SYM_One Row Coded Symptoms']
-    dt_symptoms
+
+dt_symptoms = df['SYM_One Row Coded Symptoms']
+dt_symptoms
+
+
+# In[32]:
+
+
+symptoms_list  = []
+for i in range(0,len(dt_symptoms)):
+    temp = str(dt_symptoms[i])
+    temp = temp.split(',')
     
-    
-    # # In[90]:
-    
-    
-    symptoms_list  = []
-    for i in range(0,len(dt_symptoms)):
-        temp = str(dt_symptoms[i])
-        temp = temp.split(',')
-        
-        for j in range(0,len(temp)):
-            txt = temp[j].strip()
-            temp[j] = txt
-        symptoms_list.extend(temp)
-    
-    
-    # # In[91]:
-    
-    
-    symptoms_count = dict(Counter(symptoms_list))
-    # print(symptoms_count)
-    
-    
-    # # In[92]:
-    
-    
-    q2_final_df = pd.DataFrame([symptoms_count])
-    
-    
-    # # In[93]:
-    
-    
-    q2_final_df = q2_final_df.transpose()
-    
-    
-    # # In[94]:
-    
-    
-    q2_final_df.rename(columns={0: "values"},inplace=True)
-    
-    
-    # # In[95]:
-    
-    
-    q2_final_df.sort_values('values',ascending=False,inplace=True)
-    
-    
-    # # In[96]:
-    
-    
-    q2_final_df.to_csv('q2.csv',index=False)
-else:
-    q2_final_df = pd.read_csv('q2.csv')
+    for j in range(0,len(temp)):
+        txt = temp[j].strip()
+        temp[j] = txt
+    symptoms_list.extend(temp)
+
+
+# In[33]:
+
+
+symptoms_count = dict(Counter(symptoms_list))
+# print(symptoms_count)
+
+
+# In[34]:
+
+
+q2_final_df = pd.DataFrame([symptoms_count])
+
+
+# In[35]:
+
+
+q2_final_df = q2_final_df.transpose()
+
+
+# In[36]:
+
+
+q2_final_df.rename(columns={0: "values"},inplace=True)
+
+
+# In[37]:
+
+
+q2_final_df.sort_values('values',ascending=False,inplace=True)
 
 
 # # Q3
 
-# # In[97]:
-
-if q3 == False:
-    third_df = df.copy()
-    
-    
-    # # In[98]:
-    
-    
-    third_df.columns
-    
-    
-    # # In[99]:
-    
-    
-    q3_final_df = pd.DataFrame()
-    
-    
-    # # In[ ]:
-    
-    
-    
-    
-    
-    # # In[100]:
-    
-    
-    for industry in third_df['PRI_FDA Industry Name'].unique():
-        temp_looped_df = pd.DataFrame()
-        temp_df = third_df[third_df['PRI_FDA Industry Name'] == industry]
-    
-        events_splitted_lst = []
-        for colval in temp_df['AEC_One Row Outcomes']:
-            temp = colval.split(',')
-            
-            for j in range(0,len(temp)):
-                txt = temp[j].strip()
-                temp[j] = txt 
-            events_splitted_lst.extend(temp)
-    
-        Events_count = dict(Counter(events_splitted_lst))
-    
-        Industry_name = []
-        event = []
-        counts = []
-        for key,value in Events_count.items():
-            Industry_name.append(industry)
-            event.append(key)
-            counts.append(value)
-    
-        dic = {
-        'Industry Name' : Industry_name,
-        'Events' : event,
-        'Count' : counts
-        }
-    
-        temp_looped_df = pd.DataFrame(dic)
-        q3_final_df = q3_final_df.append(temp_looped_df)
-    
-    
-    # # In[101]:
-    
-    
-    q3_final_df.to_csv('q3.csv')
-else:
-    q3_final_df = pd.read_csv('q3.csv')
+# In[38]:
 
 
-# # In[102]:
+third_df = df.copy()
+
+
+# In[39]:
+
+
+third_df.columns
+
+
+# In[40]:
+
+
+q3_final_df = pd.DataFrame()
+
+
+# In[ ]:
+
+
+
+
+
+# In[41]:
+
+
+for industry in third_df['PRI_FDA Industry Name'].unique():
+    temp_looped_df = pd.DataFrame()
+    temp_df = third_df[third_df['PRI_FDA Industry Name'] == industry]
+
+    events_splitted_lst = []
+    for colval in temp_df['AEC_One Row Outcomes']:
+        temp = colval.split(',')
+        
+        for j in range(0,len(temp)):
+            txt = temp[j].strip()
+            temp[j] = txt 
+        events_splitted_lst.extend(temp)
+
+    Events_count = dict(Counter(events_splitted_lst))
+
+    Industry_name = []
+    event = []
+    counts = []
+    for key,value in Events_count.items():
+        Industry_name.append(industry)
+        event.append(key)
+        counts.append(value)
+
+    dic = {
+    'Industry Name' : Industry_name,
+    'Events' : event,
+    'Count' : counts
+    }
+
+    temp_looped_df = pd.DataFrame(dic)
+    q3_final_df = q3_final_df.append(temp_looped_df)
+
+
+# In[42]:
+
+
+q3_final_df
+
+
+# In[43]:
 
 
 filter_list = ['Not Available', 'Bakery Prod/Dough/Mix/Icing']
 q3_final_df[q3_final_df['Industry Name'].isin(filter_list)]
 
 
-# # In[103]:
+# In[44]:
 
 
 sum_df = pd.DataFrame(columns = ['Industries','Total no of Events'])
@@ -454,27 +414,27 @@ for indus in q3_final_df['Industry Name'].unique():
                   ignore_index=True)
 
 
-# # In[104]:
+# In[45]:
 
 
 sum_df.sort_values('Total no of Events',ascending=False,inplace=True)
 
 
-# # In[105]:
+# In[46]:
 
 
 sum_df.head()
 
 
-# # In[ ]:
+# In[ ]:
 
 
-
+print('Wait for the browser to load....')
 
 
 # # Plotly
 
-# # In[106]:
+# In[47]:
 
 
 BS = "https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
@@ -772,16 +732,17 @@ if __name__ == '__main__':
     # def open_browser():
     #     webbrowser.open_new('http://127.0.0.1:8080/')
     # open_browser()
-    app.run_server(debug=False, use_reloader=False, port='8080')
+    # app.run_server(debug=False, use_reloader=False,port=os.environ.get('PORT', '8080'))
+    app.run_server(debug=False)
 
 
-# # In[ ]:
+# In[ ]:
 
 
 
 
 
-# # In[ ]:
+# In[ ]:
 
 
 

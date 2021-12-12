@@ -1,0 +1,394 @@
+,Industry Name,Events,Count
+0,Bakery Prod/Dough/Mix/Icing,VISITED AN ER,371
+1,Bakery Prod/Dough/Mix/Icing,VISITED A HEALTH CARE PROVIDER,370
+2,Bakery Prod/Dough/Mix/Icing,REQ. INTERVENTION TO PRVNT PERM. IMPRMNT.,121
+3,Bakery Prod/Dough/Mix/Icing,HOSPITALIZATION,119
+4,Bakery Prod/Dough/Mix/Icing,NON-SERIOUS INJURIES/ ILLNESS,1923
+5,Bakery Prod/Dough/Mix/Icing,LIFE THREATENING,132
+6,Bakery Prod/Dough/Mix/Icing,DEATH,13
+7,Bakery Prod/Dough/Mix/Icing,SERIOUS INJURIES/ ILLNESS,8
+8,Bakery Prod/Dough/Mix/Icing,NONE,19
+9,Bakery Prod/Dough/Mix/Icing,OTHER SERIOUS (IMPORTANT MEDICAL EVENTS),83
+10,Bakery Prod/Dough/Mix/Icing,DISABILITY,18
+11,Bakery Prod/Dough/Mix/Icing,CONGENITAL ANOMALY,1
+0,Ice Cream Prod,VISITED AN ER,102
+1,Ice Cream Prod,NON-SERIOUS INJURIES/ ILLNESS,643
+2,Ice Cream Prod,VISITED A HEALTH CARE PROVIDER,105
+3,Ice Cream Prod,HOSPITALIZATION,38
+4,Ice Cream Prod,REQ. INTERVENTION TO PRVNT PERM. IMPRMNT.,37
+5,Ice Cream Prod,NONE,4
+6,Ice Cream Prod,LIFE THREATENING,42
+7,Ice Cream Prod,DISABILITY,11
+8,Ice Cream Prod,OTHER SERIOUS (IMPORTANT MEDICAL EVENTS),33
+9,Ice Cream Prod,DEATH,5
+10,Ice Cream Prod,SERIOUS INJURIES/ ILLNESS,1
+0,Baby Food Prod,NON-SERIOUS INJURIES/ ILLNESS,570
+1,Baby Food Prod,VISITED A HEALTH CARE PROVIDER,399
+2,Baby Food Prod,VISITED AN ER,243
+3,Baby Food Prod,HOSPITALIZATION,269
+4,Baby Food Prod,REQ. INTERVENTION TO PRVNT PERM. IMPRMNT.,96
+5,Baby Food Prod,LIFE THREATENING,113
+6,Baby Food Prod,DEATH,40
+7,Baby Food Prod,DISABILITY,20
+8,Baby Food Prod,SERIOUS INJURIES/ ILLNESS,8
+9,Baby Food Prod,NONE,3
+10,Baby Food Prod,OTHER SERIOUS (IMPORTANT MEDICAL EVENTS),148
+11,Baby Food Prod,CONGENITAL ANOMALY,1
+0,Snack Food Item,NON-SERIOUS INJURIES/ ILLNESS,744
+1,Snack Food Item,VISITED A HEALTH CARE PROVIDER,161
+2,Snack Food Item,VISITED AN ER,122
+3,Snack Food Item,REQ. INTERVENTION TO PRVNT PERM. IMPRMNT.,44
+4,Snack Food Item,LIFE THREATENING,44
+5,Snack Food Item,HOSPITALIZATION,30
+6,Snack Food Item,DISABILITY,14
+7,Snack Food Item,OTHER SERIOUS (IMPORTANT MEDICAL EVENTS),56
+8,Snack Food Item,NONE,4
+9,Snack Food Item,DEATH,1
+0,Fruit/Fruit Prod,DEATH,4
+1,Fruit/Fruit Prod,LIFE THREATENING,57
+2,Fruit/Fruit Prod,DISABILITY,33
+3,Fruit/Fruit Prod,NON-SERIOUS INJURIES/ ILLNESS,1701
+4,Fruit/Fruit Prod,VISITED A HEALTH CARE PROVIDER,358
+5,Fruit/Fruit Prod,VISITED AN ER,293
+6,Fruit/Fruit Prod,HOSPITALIZATION,71
+7,Fruit/Fruit Prod,SERIOUS INJURIES/ ILLNESS,74
+8,Fruit/Fruit Prod,REQ. INTERVENTION TO PRVNT PERM. IMPRMNT.,41
+9,Fruit/Fruit Prod,OTHER SERIOUS (IMPORTANT MEDICAL EVENTS),105
+10,Fruit/Fruit Prod,NONE,6
+0,Vit/Min/Prot/Unconv Diet(Human/Animal),VISITED A HEALTH CARE PROVIDER,10061
+1,Vit/Min/Prot/Unconv Diet(Human/Animal),REQ. INTERVENTION TO PRVNT PERM. IMPRMNT.,1687
+2,Vit/Min/Prot/Unconv Diet(Human/Animal),DEATH,755
+3,Vit/Min/Prot/Unconv Diet(Human/Animal),LIFE THREATENING,3686
+4,Vit/Min/Prot/Unconv Diet(Human/Animal),HOSPITALIZATION,13951
+5,Vit/Min/Prot/Unconv Diet(Human/Animal),NON-SERIOUS INJURIES/ ILLNESS,3736
+6,Vit/Min/Prot/Unconv Diet(Human/Animal),DISABILITY,1814
+7,Vit/Min/Prot/Unconv Diet(Human/Animal),VISITED AN ER,8218
+8,Vit/Min/Prot/Unconv Diet(Human/Animal),SERIOUS INJURIES/ ILLNESS,3354
+9,Vit/Min/Prot/Unconv Diet(Human/Animal),CONGENITAL ANOMALY,53
+10,Vit/Min/Prot/Unconv Diet(Human/Animal),OTHER SERIOUS (IMPORTANT MEDICAL EVENTS),28350
+11,Vit/Min/Prot/Unconv Diet(Human/Animal),NONE,18
+0,Soft Drink/Water,NON-SERIOUS INJURIES/ ILLNESS,1794
+1,Soft Drink/Water,LIFE THREATENING,105
+2,Soft Drink/Water,DISABILITY,57
+3,Soft Drink/Water,VISITED AN ER,469
+4,Soft Drink/Water,HOSPITALIZATION,147
+5,Soft Drink/Water,VISITED A HEALTH CARE PROVIDER,479
+6,Soft Drink/Water,REQ. INTERVENTION TO PRVNT PERM. IMPRMNT.,88
+7,Soft Drink/Water,DEATH,14
+8,Soft Drink/Water,NONE,12
+9,Soft Drink/Water,OTHER SERIOUS (IMPORTANT MEDICAL EVENTS),162
+10,Soft Drink/Water,SERIOUS INJURIES/ ILLNESS,7
+11,Soft Drink/Water,CONGENITAL ANOMALY,1
+0,Cosmetics,NON-SERIOUS INJURIES/ ILLNESS,2923
+1,Cosmetics,LIFE THREATENING,158
+2,Cosmetics,DISABILITY,397
+3,Cosmetics,VISITED A HEALTH CARE PROVIDER,5082
+4,Cosmetics,VISITED AN ER,577
+5,Cosmetics,REQ. INTERVENTION TO PRVNT PERM. IMPRMNT.,183
+6,Cosmetics,DEATH,969
+7,Cosmetics,HOSPITALIZATION,564
+8,Cosmetics,SERIOUS INJURIES/ ILLNESS,50
+9,Cosmetics,CONGENITAL ANOMALY,3
+10,Cosmetics,OTHER SERIOUS (IMPORTANT MEDICAL EVENTS),6371
+11,Cosmetics,NONE,7
+0,Milk/Butter/Dried Milk Prod,NON-SERIOUS INJURIES/ ILLNESS,1090
+1,Milk/Butter/Dried Milk Prod,VISITED AN ER,151
+2,Milk/Butter/Dried Milk Prod,REQ. INTERVENTION TO PRVNT PERM. IMPRMNT.,52
+3,Milk/Butter/Dried Milk Prod,LIFE THREATENING,55
+4,Milk/Butter/Dried Milk Prod,HOSPITALIZATION,56
+5,Milk/Butter/Dried Milk Prod,VISITED A HEALTH CARE PROVIDER,253
+6,Milk/Butter/Dried Milk Prod,SERIOUS INJURIES/ ILLNESS,2
+7,Milk/Butter/Dried Milk Prod,DISABILITY,95
+8,Milk/Butter/Dried Milk Prod,OTHER SERIOUS (IMPORTANT MEDICAL EVENTS),95
+9,Milk/Butter/Dried Milk Prod,DEATH,2
+10,Milk/Butter/Dried Milk Prod,NONE,5
+0,Coffee/Tea,LIFE THREATENING,62
+1,Coffee/Tea,DISABILITY,28
+2,Coffee/Tea,VISITED A HEALTH CARE PROVIDER,150
+3,Coffee/Tea,NON-SERIOUS INJURIES/ ILLNESS,524
+4,Coffee/Tea,NONE,3
+5,Coffee/Tea,VISITED AN ER,125
+6,Coffee/Tea,HOSPITALIZATION,132
+7,Coffee/Tea,SERIOUS INJURIES/ ILLNESS,15
+8,Coffee/Tea,REQ. INTERVENTION TO PRVNT PERM. IMPRMNT.,18
+9,Coffee/Tea,DEATH,1
+10,Coffee/Tea,OTHER SERIOUS (IMPORTANT MEDICAL EVENTS),88
+11,Coffee/Tea,CONGENITAL ANOMALY,4
+0,Food Additives (Human Use),LIFE THREATENING,33
+1,Food Additives (Human Use),DISABILITY,41
+2,Food Additives (Human Use),NON-SERIOUS INJURIES/ ILLNESS,130
+3,Food Additives (Human Use),VISITED A HEALTH CARE PROVIDER,76
+4,Food Additives (Human Use),NONE,1
+5,Food Additives (Human Use),VISITED AN ER,34
+6,Food Additives (Human Use),REQ. INTERVENTION TO PRVNT PERM. IMPRMNT.,24
+7,Food Additives (Human Use),SERIOUS INJURIES/ ILLNESS,1
+8,Food Additives (Human Use),HOSPITALIZATION,46
+9,Food Additives (Human Use),DEATH,5
+10,Food Additives (Human Use),OTHER SERIOUS (IMPORTANT MEDICAL EVENTS),82
+11,Food Additives (Human Use),CONGENITAL ANOMALY,2
+0,Gelatin/Rennet/Pudding Mix/Pie Filling,LIFE THREATENING,3
+1,Gelatin/Rennet/Pudding Mix/Pie Filling,DISABILITY,2
+2,Gelatin/Rennet/Pudding Mix/Pie Filling,NON-SERIOUS INJURIES/ ILLNESS,84
+3,Gelatin/Rennet/Pudding Mix/Pie Filling,VISITED AN ER,9
+4,Gelatin/Rennet/Pudding Mix/Pie Filling,OTHER SERIOUS (IMPORTANT MEDICAL EVENTS),4
+5,Gelatin/Rennet/Pudding Mix/Pie Filling,VISITED A HEALTH CARE PROVIDER,10
+6,Gelatin/Rennet/Pudding Mix/Pie Filling,HOSPITALIZATION,3
+7,Gelatin/Rennet/Pudding Mix/Pie Filling,REQ. INTERVENTION TO PRVNT PERM. IMPRMNT.,7
+0,Mult Food Dinner/Grav/Sauce/Special,NON-SERIOUS INJURIES/ ILLNESS,757
+1,Mult Food Dinner/Grav/Sauce/Special,REQ. INTERVENTION TO PRVNT PERM. IMPRMNT.,39
+2,Mult Food Dinner/Grav/Sauce/Special,VISITED AN ER,116
+3,Mult Food Dinner/Grav/Sauce/Special,LIFE THREATENING,53
+4,Mult Food Dinner/Grav/Sauce/Special,HOSPITALIZATION,40
+5,Mult Food Dinner/Grav/Sauce/Special,VISITED A HEALTH CARE PROVIDER,145
+6,Mult Food Dinner/Grav/Sauce/Special,DISABILITY,29
+7,Mult Food Dinner/Grav/Sauce/Special,NONE,6
+8,Mult Food Dinner/Grav/Sauce/Special,OTHER SERIOUS (IMPORTANT MEDICAL EVENTS),75
+9,Mult Food Dinner/Grav/Sauce/Special,SERIOUS INJURIES/ ILLNESS,5
+10,Mult Food Dinner/Grav/Sauce/Special,DEATH,1
+0,Cheese/Cheese Prod,NON-SERIOUS INJURIES/ ILLNESS,302
+1,Cheese/Cheese Prod,HOSPITALIZATION,19
+2,Cheese/Cheese Prod,VISITED A HEALTH CARE PROVIDER,67
+3,Cheese/Cheese Prod,VISITED AN ER,45
+4,Cheese/Cheese Prod,NONE,4
+5,Cheese/Cheese Prod,REQ. INTERVENTION TO PRVNT PERM. IMPRMNT.,6
+6,Cheese/Cheese Prod,LIFE THREATENING,15
+7,Cheese/Cheese Prod,OTHER SERIOUS (IMPORTANT MEDICAL EVENTS),25
+8,Cheese/Cheese Prod,DEATH,6
+9,Cheese/Cheese Prod,CONGENITAL ANOMALY,1
+10,Cheese/Cheese Prod,SERIOUS INJURIES/ ILLNESS,2
+11,Cheese/Cheese Prod,DISABILITY,4
+0,Macaroni/Noodle Prod,NON-SERIOUS INJURIES/ ILLNESS,147
+1,Macaroni/Noodle Prod,HOSPITALIZATION,6
+2,Macaroni/Noodle Prod,VISITED A HEALTH CARE PROVIDER,19
+3,Macaroni/Noodle Prod,REQ. INTERVENTION TO PRVNT PERM. IMPRMNT.,9
+4,Macaroni/Noodle Prod,VISITED AN ER,23
+5,Macaroni/Noodle Prod,LIFE THREATENING,5
+6,Macaroni/Noodle Prod,NONE,1
+7,Macaroni/Noodle Prod,DISABILITY,4
+8,Macaroni/Noodle Prod,OTHER SERIOUS (IMPORTANT MEDICAL EVENTS),9
+0,Vegetables/Vegetable Products,VISITED A HEALTH CARE PROVIDER,342
+1,Vegetables/Vegetable Products,NON-SERIOUS INJURIES/ ILLNESS,2547
+2,Vegetables/Vegetable Products,VISITED AN ER,291
+3,Vegetables/Vegetable Products,HOSPITALIZATION,111
+4,Vegetables/Vegetable Products,REQ. INTERVENTION TO PRVNT PERM. IMPRMNT.,46
+5,Vegetables/Vegetable Products,DEATH,11
+6,Vegetables/Vegetable Products,LIFE THREATENING,69
+7,Vegetables/Vegetable Products,DISABILITY,35
+8,Vegetables/Vegetable Products,OTHER SERIOUS (IMPORTANT MEDICAL EVENTS),99
+9,Vegetables/Vegetable Products,NONE,6
+10,Vegetables/Vegetable Products,SERIOUS INJURIES/ ILLNESS,4
+0,Cereal Prep/Breakfast Food,NON-SERIOUS INJURIES/ ILLNESS,785
+1,Cereal Prep/Breakfast Food,VISITED AN ER,145
+2,Cereal Prep/Breakfast Food,VISITED A HEALTH CARE PROVIDER,176
+3,Cereal Prep/Breakfast Food,HOSPITALIZATION,45
+4,Cereal Prep/Breakfast Food,LIFE THREATENING,54
+5,Cereal Prep/Breakfast Food,REQ. INTERVENTION TO PRVNT PERM. IMPRMNT.,41
+6,Cereal Prep/Breakfast Food,SERIOUS INJURIES/ ILLNESS,8
+7,Cereal Prep/Breakfast Food,DISABILITY,110
+8,Cereal Prep/Breakfast Food,OTHER SERIOUS (IMPORTANT MEDICAL EVENTS),183
+9,Cereal Prep/Breakfast Food,NONE,4
+0,Dietary Conv Food/Meal Replacements,NON-SERIOUS INJURIES/ ILLNESS,330
+1,Dietary Conv Food/Meal Replacements,VISITED AN ER,308
+2,Dietary Conv Food/Meal Replacements,HOSPITALIZATION,513
+3,Dietary Conv Food/Meal Replacements,REQ. INTERVENTION TO PRVNT PERM. IMPRMNT.,56
+4,Dietary Conv Food/Meal Replacements,VISITED A HEALTH CARE PROVIDER,310
+5,Dietary Conv Food/Meal Replacements,LIFE THREATENING,118
+6,Dietary Conv Food/Meal Replacements,DEATH,77
+7,Dietary Conv Food/Meal Replacements,DISABILITY,51
+8,Dietary Conv Food/Meal Replacements,SERIOUS INJURIES/ ILLNESS,33
+9,Dietary Conv Food/Meal Replacements,NONE,2
+10,Dietary Conv Food/Meal Replacements,OTHER SERIOUS (IMPORTANT MEDICAL EVENTS),436
+11,Dietary Conv Food/Meal Replacements,CONGENITAL ANOMALY,3
+0,Choc/Cocoa Prod,NON-SERIOUS INJURIES/ ILLNESS,554
+1,Choc/Cocoa Prod,VISITED A HEALTH CARE PROVIDER,109
+2,Choc/Cocoa Prod,VISITED AN ER,112
+3,Choc/Cocoa Prod,REQ. INTERVENTION TO PRVNT PERM. IMPRMNT.,39
+4,Choc/Cocoa Prod,LIFE THREATENING,40
+5,Choc/Cocoa Prod,HOSPITALIZATION,20
+6,Choc/Cocoa Prod,DISABILITY,7
+7,Choc/Cocoa Prod,OTHER SERIOUS (IMPORTANT MEDICAL EVENTS),35
+8,Choc/Cocoa Prod,NONE,3
+9,Choc/Cocoa Prod,CONGENITAL ANOMALY,1
+0,Nuts/Edible Seed,VISITED AN ER,279
+1,Nuts/Edible Seed,REQ. INTERVENTION TO PRVNT PERM. IMPRMNT.,38
+2,Nuts/Edible Seed,NON-SERIOUS INJURIES/ ILLNESS,2701
+3,Nuts/Edible Seed,VISITED A HEALTH CARE PROVIDER,496
+4,Nuts/Edible Seed,HOSPITALIZATION,164
+5,Nuts/Edible Seed,LIFE THREATENING,58
+6,Nuts/Edible Seed,NONE,11
+7,Nuts/Edible Seed,OTHER SERIOUS (IMPORTANT MEDICAL EVENTS),99
+8,Nuts/Edible Seed,DISABILITY,21
+9,Nuts/Edible Seed,DEATH,18
+10,Nuts/Edible Seed,CONGENITAL ANOMALY,3
+11,Nuts/Edible Seed,SERIOUS INJURIES/ ILLNESS,3
+0,Candy W/O Choc/Special/Chew Gum,NON-SERIOUS INJURIES/ ILLNESS,418
+1,Candy W/O Choc/Special/Chew Gum,VISITED A HEALTH CARE PROVIDER,124
+2,Candy W/O Choc/Special/Chew Gum,HOSPITALIZATION,34
+3,Candy W/O Choc/Special/Chew Gum,LIFE THREATENING,36
+4,Candy W/O Choc/Special/Chew Gum,VISITED AN ER,75
+5,Candy W/O Choc/Special/Chew Gum,DISABILITY,17
+6,Candy W/O Choc/Special/Chew Gum,REQ. INTERVENTION TO PRVNT PERM. IMPRMNT.,25
+7,Candy W/O Choc/Special/Chew Gum,SERIOUS INJURIES/ ILLNESS,4
+8,Candy W/O Choc/Special/Chew Gum,NONE,4
+9,Candy W/O Choc/Special/Chew Gum,OTHER SERIOUS (IMPORTANT MEDICAL EVENTS),40
+10,Candy W/O Choc/Special/Chew Gum,CONGENITAL ANOMALY,1
+11,Candy W/O Choc/Special/Chew Gum,DEATH,2
+0,Fishery/Seafood Prod,NON-SERIOUS INJURIES/ ILLNESS,1458
+1,Fishery/Seafood Prod,VISITED A HEALTH CARE PROVIDER,444
+2,Fishery/Seafood Prod,VISITED AN ER,461
+3,Fishery/Seafood Prod,REQ. INTERVENTION TO PRVNT PERM. IMPRMNT.,137
+4,Fishery/Seafood Prod,LIFE THREATENING,205
+5,Fishery/Seafood Prod,DEATH,96
+6,Fishery/Seafood Prod,HOSPITALIZATION,360
+7,Fishery/Seafood Prod,SERIOUS INJURIES/ ILLNESS,15
+8,Fishery/Seafood Prod,NONE,10
+9,Fishery/Seafood Prod,OTHER SERIOUS (IMPORTANT MEDICAL EVENTS),54
+10,Fishery/Seafood Prod,CONGENITAL ANOMALY,2
+11,Fishery/Seafood Prod,DISABILITY,17
+0,Dressing/Condiment,NON-SERIOUS INJURIES/ ILLNESS,217
+1,Dressing/Condiment,VISITED A HEALTH CARE PROVIDER,43
+2,Dressing/Condiment,VISITED AN ER,33
+3,Dressing/Condiment,REQ. INTERVENTION TO PRVNT PERM. IMPRMNT.,7
+4,Dressing/Condiment,HOSPITALIZATION,9
+5,Dressing/Condiment,LIFE THREATENING,7
+6,Dressing/Condiment,DISABILITY,4
+7,Dressing/Condiment,OTHER SERIOUS (IMPORTANT MEDICAL EVENTS),18
+8,Dressing/Condiment,NONE,1
+0,Vegetable Oils,NON-SERIOUS INJURIES/ ILLNESS,71
+1,Vegetable Oils,HOSPITALIZATION,7
+2,Vegetable Oils,VISITED AN ER,8
+3,Vegetable Oils,OTHER SERIOUS (IMPORTANT MEDICAL EVENTS),19
+4,Vegetable Oils,LIFE THREATENING,6
+5,Vegetable Oils,VISITED A HEALTH CARE PROVIDER,11
+6,Vegetable Oils,REQ. INTERVENTION TO PRVNT PERM. IMPRMNT.,3
+7,Vegetable Oils,SERIOUS INJURIES/ ILLNESS,2
+8,Vegetable Oils,NONE,1
+9,Vegetable Oils,DEATH,1
+10,Vegetable Oils,DISABILITY,2
+0,Whole Grain/Milled Grain Prod/Starch,VISITED A HEALTH CARE PROVIDER,50
+1,Whole Grain/Milled Grain Prod/Starch,NON-SERIOUS INJURIES/ ILLNESS,240
+2,Whole Grain/Milled Grain Prod/Starch,VISITED AN ER,30
+3,Whole Grain/Milled Grain Prod/Starch,HOSPITALIZATION,23
+4,Whole Grain/Milled Grain Prod/Starch,REQ. INTERVENTION TO PRVNT PERM. IMPRMNT.,7
+5,Whole Grain/Milled Grain Prod/Starch,LIFE THREATENING,13
+6,Whole Grain/Milled Grain Prod/Starch,DISABILITY,10
+7,Whole Grain/Milled Grain Prod/Starch,OTHER SERIOUS (IMPORTANT MEDICAL EVENTS),16
+8,Whole Grain/Milled Grain Prod/Starch,SERIOUS INJURIES/ ILLNESS,1
+9,Whole Grain/Milled Grain Prod/Starch,NONE,1
+0,"Meat, Meat Products and Poultry",VISITED A HEALTH CARE PROVIDER,40
+1,"Meat, Meat Products and Poultry",NON-SERIOUS INJURIES/ ILLNESS,182
+2,"Meat, Meat Products and Poultry",VISITED AN ER,32
+3,"Meat, Meat Products and Poultry",HOSPITALIZATION,14
+4,"Meat, Meat Products and Poultry",REQ. INTERVENTION TO PRVNT PERM. IMPRMNT.,12
+5,"Meat, Meat Products and Poultry",LIFE THREATENING,11
+6,"Meat, Meat Products and Poultry",NONE,1
+7,"Meat, Meat Products and Poultry",DISABILITY,7
+8,"Meat, Meat Products and Poultry",OTHER SERIOUS (IMPORTANT MEDICAL EVENTS),15
+0,Egg/Egg Prod,VISITED A HEALTH CARE PROVIDER,23
+1,Egg/Egg Prod,HOSPITALIZATION,9
+2,Egg/Egg Prod,VISITED AN ER,19
+3,Egg/Egg Prod,NON-SERIOUS INJURIES/ ILLNESS,161
+4,Egg/Egg Prod,REQ. INTERVENTION TO PRVNT PERM. IMPRMNT.,1
+5,Egg/Egg Prod,OTHER SERIOUS (IMPORTANT MEDICAL EVENTS),6
+6,Egg/Egg Prod,LIFE THREATENING,3
+7,Egg/Egg Prod,DEATH,1
+8,Egg/Egg Prod,DISABILITY,4
+9,Egg/Egg Prod,NONE,1
+10,Egg/Egg Prod,SERIOUS INJURIES/ ILLNESS,1
+0,"Spices, Flavors And Salts",NON-SERIOUS INJURIES/ ILLNESS,216
+1,"Spices, Flavors And Salts",VISITED AN ER,32
+2,"Spices, Flavors And Salts",VISITED A HEALTH CARE PROVIDER,49
+3,"Spices, Flavors And Salts",SERIOUS INJURIES/ ILLNESS,4
+4,"Spices, Flavors And Salts",HOSPITALIZATION,25
+5,"Spices, Flavors And Salts",REQ. INTERVENTION TO PRVNT PERM. IMPRMNT.,17
+6,"Spices, Flavors And Salts",OTHER SERIOUS (IMPORTANT MEDICAL EVENTS),39
+7,"Spices, Flavors And Salts",LIFE THREATENING,17
+8,"Spices, Flavors And Salts",DISABILITY,6
+9,"Spices, Flavors And Salts",DEATH,1
+10,"Spices, Flavors And Salts",NONE,1
+0,Prep Salad Prod,NON-SERIOUS INJURIES/ ILLNESS,170
+1,Prep Salad Prod,HOSPITALIZATION,13
+2,Prep Salad Prod,VISITED AN ER,28
+3,Prep Salad Prod,VISITED A HEALTH CARE PROVIDER,38
+4,Prep Salad Prod,LIFE THREATENING,4
+5,Prep Salad Prod,NONE,1
+6,Prep Salad Prod,REQ. INTERVENTION TO PRVNT PERM. IMPRMNT.,6
+7,Prep Salad Prod,DISABILITY,10
+8,Prep Salad Prod,OTHER SERIOUS (IMPORTANT MEDICAL EVENTS),6
+0,Soup,NON-SERIOUS INJURIES/ ILLNESS,189
+1,Soup,VISITED A HEALTH CARE PROVIDER,34
+2,Soup,HOSPITALIZATION,13
+3,Soup,LIFE THREATENING,8
+4,Soup,VISITED AN ER,29
+5,Soup,REQ. INTERVENTION TO PRVNT PERM. IMPRMNT.,9
+6,Soup,DEATH,1
+7,Soup,OTHER SERIOUS (IMPORTANT MEDICAL EVENTS),9
+8,Soup,NONE,2
+9,Soup,DISABILITY,4
+0,Vegetable Protein Prod,NON-SERIOUS INJURIES/ ILLNESS,54
+1,Vegetable Protein Prod,VISITED AN ER,8
+2,Vegetable Protein Prod,VISITED A HEALTH CARE PROVIDER,10
+3,Vegetable Protein Prod,HOSPITALIZATION,3
+4,Vegetable Protein Prod,LIFE THREATENING,3
+5,Vegetable Protein Prod,REQ. INTERVENTION TO PRVNT PERM. IMPRMNT.,2
+6,Vegetable Protein Prod,OTHER SERIOUS (IMPORTANT MEDICAL EVENTS),5
+7,Vegetable Protein Prod,DISABILITY,2
+0,Filled Milk/Imit Milk Prod,VISITED AN ER,38
+1,Filled Milk/Imit Milk Prod,NON-SERIOUS INJURIES/ ILLNESS,152
+2,Filled Milk/Imit Milk Prod,HOSPITALIZATION,15
+3,Filled Milk/Imit Milk Prod,DISABILITY,4
+4,Filled Milk/Imit Milk Prod,VISITED A HEALTH CARE PROVIDER,49
+5,Filled Milk/Imit Milk Prod,REQ. INTERVENTION TO PRVNT PERM. IMPRMNT.,21
+6,Filled Milk/Imit Milk Prod,LIFE THREATENING,29
+7,Filled Milk/Imit Milk Prod,OTHER SERIOUS (IMPORTANT MEDICAL EVENTS),13
+8,Filled Milk/Imit Milk Prod,SERIOUS INJURIES/ ILLNESS,1
+0,Food Sweeteners (Nutritive),NON-SERIOUS INJURIES/ ILLNESS,153
+1,Food Sweeteners (Nutritive),VISITED AN ER,28
+2,Food Sweeteners (Nutritive),LIFE THREATENING,12
+3,Food Sweeteners (Nutritive),VISITED A HEALTH CARE PROVIDER,45
+4,Food Sweeteners (Nutritive),OTHER SERIOUS (IMPORTANT MEDICAL EVENTS),27
+5,Food Sweeteners (Nutritive),DISABILITY,5
+6,Food Sweeteners (Nutritive),REQ. INTERVENTION TO PRVNT PERM. IMPRMNT.,15
+7,Food Sweeteners (Nutritive),HOSPITALIZATION,14
+8,Food Sweeteners (Nutritive),SERIOUS INJURIES/ ILLNESS,1
+9,Food Sweeteners (Nutritive),NONE,1
+10,Food Sweeteners (Nutritive),DEATH,2
+0,Beverage Bases/Conc/Nectar,NON-SERIOUS INJURIES/ ILLNESS,106
+1,Beverage Bases/Conc/Nectar,REQ. INTERVENTION TO PRVNT PERM. IMPRMNT.,7
+2,Beverage Bases/Conc/Nectar,VISITED A HEALTH CARE PROVIDER,16
+3,Beverage Bases/Conc/Nectar,VISITED AN ER,18
+4,Beverage Bases/Conc/Nectar,LIFE THREATENING,7
+5,Beverage Bases/Conc/Nectar,HOSPITALIZATION,10
+6,Beverage Bases/Conc/Nectar,OTHER SERIOUS (IMPORTANT MEDICAL EVENTS),19
+7,Beverage Bases/Conc/Nectar,DISABILITY,3
+8,Beverage Bases/Conc/Nectar,NONE,1
+0,Alcoholic Beverage,NON-SERIOUS INJURIES/ ILLNESS,11
+1,Alcoholic Beverage,HOSPITALIZATION,12
+2,Alcoholic Beverage,VISITED A HEALTH CARE PROVIDER,4
+3,Alcoholic Beverage,DEATH,2
+4,Alcoholic Beverage,VISITED AN ER,14
+5,Alcoholic Beverage,REQ. INTERVENTION TO PRVNT PERM. IMPRMNT.,3
+6,Alcoholic Beverage,LIFE THREATENING,6
+7,Alcoholic Beverage,OTHER SERIOUS (IMPORTANT MEDICAL EVENTS),2
+8,Alcoholic Beverage,CONGENITAL ANOMALY,1
+9,Alcoholic Beverage,DISABILITY,1
+10,Alcoholic Beverage,SERIOUS INJURIES/ ILLNESS,1
+11,Alcoholic Beverage,NONE,1
+0,Miscellaneous Food Related Items,NON-SERIOUS INJURIES/ ILLNESS,28
+1,Miscellaneous Food Related Items,VISITED A HEALTH CARE PROVIDER,4
+2,Miscellaneous Food Related Items,HOSPITALIZATION,2
+3,Miscellaneous Food Related Items,OTHER SERIOUS (IMPORTANT MEDICAL EVENTS),2
+4,Miscellaneous Food Related Items,LIFE THREATENING,2
+0,Food Service/Conveyance,NON-SERIOUS INJURIES/ ILLNESS,13
+1,Food Service/Conveyance,VISITED A HEALTH CARE PROVIDER,1
+0,Multiple Food Warehouses,NON-SERIOUS INJURIES/ ILLNESS,4
+0,Color Additiv Food/Drug/Cosmetic,NON-SERIOUS INJURIES/ ILLNESS,6
+1,Color Additiv Food/Drug/Cosmetic,SERIOUS INJURIES/ ILLNESS,1
+2,Color Additiv Food/Drug/Cosmetic,VISITED AN ER,4
+3,Color Additiv Food/Drug/Cosmetic,VISITED A HEALTH CARE PROVIDER,5
+4,Color Additiv Food/Drug/Cosmetic,OTHER SERIOUS (IMPORTANT MEDICAL EVENTS),8
+5,Color Additiv Food/Drug/Cosmetic,DISABILITY,3
+6,Color Additiv Food/Drug/Cosmetic,HOSPITALIZATION,1
+7,Color Additiv Food/Drug/Cosmetic,LIFE THREATENING,3
+0,Not Available,OTHER SERIOUS (IMPORTANT MEDICAL EVENTS),1
+0,EDIBLE INSECTS AND INSECT-DERIVED FOODS,NON-SERIOUS INJURIES/ ILLNESS,1
