@@ -26,7 +26,7 @@ from plotly.subplots import make_subplots
 
 
 # # In[58]:
-
+print('Execution started....')
 
 df = pd.read_csv('CAERS_ASCII_2004_2017Q2.csv')
 df.head()
@@ -341,6 +341,9 @@ if q2 == False:
     
     
     # # In[93]:
+    q2_final_df.to_csv('q2.csv',index=False)
+else:
+    q2_final_df = pd.read_csv('q2.csv')
     
     
     q2_final_df = q2_final_df.transpose()
@@ -361,9 +364,7 @@ if q2 == False:
     # # In[96]:
     
     
-    q2_final_df.to_csv('q2.csv',index=False)
-else:
-    q2_final_df = pd.read_csv('q2.csv')
+    
 
 
 # # Q3
@@ -468,7 +469,7 @@ sum_df.head()
 
 # # In[ ]:
 
-
+print('Wait for the browser to load')
 
 
 
